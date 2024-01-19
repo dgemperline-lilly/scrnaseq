@@ -57,7 +57,7 @@ process STAR_ALIGN {
         --readFilesIn ${reverse.join( "," )} ${forward.join( "," )} \\
         --runThreadN $task.cpus \\
         --outFileNamePrefix $prefix. \\
-        --soloCBwhitelist <(gzip -cdf $whitelist) \\
+        --soloCBwhitelist None \\
         --soloType $protocol \\
         --soloFeatures $star_feature \\
         $other_10x_parameters \\
